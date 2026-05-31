@@ -8,7 +8,7 @@
 
 ## Overview
 
-This repository contains the research paper and a full Python implementation of **HyPSO**, a hybrid memetic algorithm for unsupervised, training-free segmentation of brain MRI images via multilevel thresholding.
+This repository contains the research paper and Python implementations of **HyPSO** and **MCLPSO** for unsupervised, training-free segmentation of brain MRI images via multilevel thresholding.
 
 HyPSO couples **canonical Particle Swarm Optimisation (PSO)** with a **meta-level hyper-heuristic controller** that adaptively selects among five hill-climbing local-search variants, applied exclusively to the global-best particle. PSO's velocity and position update equations remain entirely unchanged — the controller sits above the swarm as an independent, modular layer.
 
@@ -21,6 +21,7 @@ The objective function is **2D Rényi entropy** (order *q* = 0.5) computed on th
 | File | Description |
 |---|---|
 | `hypso_mri_segmentation.py` | Full Python implementation of HyPSO |
+| `mclpso_mri_segmentation.py` | Comprehensive Learning PSO (MCLPSO) implementation for multilevel MRI segmentation using the same 2D Rényi entropy objective |
 | `Image_segmentation_using_Memetic_PSO (1).pdf` | Research paper (Mbini & Nyathi) |
 | `README.md` | This file |
 
